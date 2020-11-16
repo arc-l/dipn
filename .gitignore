@@ -1,0 +1,14 @@
+logs/*
+data/*
+logs_push/*
+runs/*
+hard-cases/*
+.vscode/*
+figures/*
+
+*.pyc
+*__pycache__*
+
+visualization.push.png
+visualization.grasp.png
+
