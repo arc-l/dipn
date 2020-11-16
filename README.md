@@ -130,7 +130,16 @@ To design your own challenging test case:
 
 Change `is_real` in `constants.py` to `True`
 
-### Instruction will be available soon
+### Setup camera Instruction will be available soon
+1. Download and install [librealsense SDK 2.0](https://github.com/IntelRealSense/librealsense)
+
+### Quick Start
+The workflow is the same as in the simulation.
+The software version of UR5e is URSoftware 5.1.1.
+1. Download the dataset [Google Drive](https://drive.google.com/drive/folders/17X5aGr-50e6RqLkyyvG4mGHP_TUpz_kB?usp=sharing).
+2. The pre-trained DIPN is in `logs_push/push/data/15_push_prediction_model.pth`, the Mask R-CNN is in `logs/real-data/data/maskrcnn.pth`, the GN is in `logs/real-data/data/`
+
+### Training
 1. Fine-tune the Mask R-CNN with real data `real-data`
 2. Fine-tune the pre-training of Grasp Network with real data `real-data`
 3. Train the Grasp Network
