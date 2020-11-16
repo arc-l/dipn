@@ -11,9 +11,11 @@ We propose a Deep Interaction Prediction Network (DIPN) for learning to predict 
     <img src="images/real.gif" width=30% />
 </p>
 
-**Demo videos of a real robot in action can be found [here](https://drive.google.com/drive/folders/1QoTaMjdrcaeiECFNbW58DF_iFdrL-icJ?usp=sharing) (no editing).**
 
 **Paper:** https://arxiv.org/abs/2011.04692
+
+### Demo videos of a real robot in action can be found [here](https://drive.google.com/drive/folders/1QoTaMjdrcaeiECFNbW58DF_iFdrL-icJ?usp=sharing) (no editing).
+
 
 ## Installation
 This implementation requires the following dependencies (tested on Ubuntu 18.04.5 LTS, GTX 2080 Ti / GTX 1070):
