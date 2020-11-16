@@ -143,6 +143,6 @@ Change `is_real` in `constants.py` to `True`
 * Use `utils/mask-auto-annotate.py` to automatically annotate objects by color.
 
 # Info
-The code is based on https://github.com/andyzeng/visual-pushing-grasping, so this code is not "clean". There are some old parts from VPG which have not been used.
+The code has dependencies over https://github.com/andyzeng/visual-pushing-grasping". 
 
-The code containes DINP and DQN + GN
+The code contaies DINP and DQN + GN
