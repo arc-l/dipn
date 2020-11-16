@@ -136,13 +136,16 @@ Change `is_real` in `constants.py` to `True`
 ### Quick Start
 The workflow is the same as in the simulation.
 The software version of UR5e is URSoftware 5.1.1.
+1. Use `touch.py` and `debug.py` to test the robot first.
 1. Download the dataset [Google Drive](https://drive.google.com/drive/folders/17X5aGr-50e6RqLkyyvG4mGHP_TUpz_kB?usp=sharing).
-2. The pre-trained DIPN is in `logs_push/push/data/15_push_prediction_model.pth`, the Mask R-CNN is in `logs/real-data/data/maskrcnn.pth`, the GN is in `logs/real-data/data/`
+1. Put the downloaded folders to `dipn`. Change the path of model in the code `push_main.py`, line 83 & 88. The pre-trained DIPN is in `logs_push/push/data/15_push_prediction_model.pth`, the Mask R-CNN is in `logs/real-data/data/maskrcnn.pth`, 
+1. Place Your objects on the workspace.
+1. Run `python push_main.py --save_visualizations --is_testing --load_snapshot --snapshot_file 'logs/real-GN/model/models/snapshot-000500.reinforcement.pth'
 
 ### Training
-1. Fine-tune the Mask R-CNN with real data `real-data`
-2. Fine-tune the pre-training of Grasp Network with real data `real-data`
-3. Train the Grasp Network
+1. Fine-tune the Mask R-CNN with real data `real-data`.
+2. Fine-tune the pre-training of Grasp Network with real data `real-data`.
+3. Train the Grasp Network with the real robot.
 
 ### Additional Tools
 
