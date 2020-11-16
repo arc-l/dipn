@@ -33,7 +33,7 @@ Note: To pre-train Grasp Network, it requires pytorch==1.5.1 and torchvision==0.
 
 ## Quick Start (Simulation)
 1. Download this repo `git clone https://github.com/rutgers-arc-lab/dipn.git`
-1. Download models from [Google Drive](https://drive.google.com/drive/folders/1QETtCBPeOGkdwYzzWl-yXUvhrHRx_8n3?usp=sharing) and put them in `dipn` folder
+1. Download models (download folders and unzip) from [Google Drive](https://drive.google.com/drive/folders/1QETtCBPeOGkdwYzzWl-yXUvhrHRx_8n3?usp=sharing) and put them in `dipn` folder
 1. Navigate to folder which contains CoppeliaSim and run `bash coppeliaSim.sh ~/dipn/simulation/simulation_new_4.1.0.ttt`
 1. Run `bash run.sh`
 <p float="left">
