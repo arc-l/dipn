@@ -70,7 +70,7 @@ python train_push_prediction.py --dataset_root 'logs_push/push/data' --distance 
 <img src="images/dipn.png" width=80%/>
 
 
-## Pre-train Grasp Network and Train Grasp Network in simluation
+## Pre-train Grasp Network and Train Grasp Network in simulation
 Switch to pytorch==1.5.1 and torchvision==0.6.1.
 `random-pretrain` contains objects which have different shapes and colors to the final objects that will be trained and evaluted on.
 `random-pretrain` could be replaced with `random-maskrcnn`, they are essentially collected in the same way.
@@ -79,7 +79,7 @@ You may need to restart the training several times, so the loss will go down to 
 python train_foreground.py --dataset_root 'logs/random-pretrain/data'
 ```
 
-To use DIPN+GN, we just need to train Grasp Network in simluation.
+To use DIPN+GN, we just need to train Grasp Network in simulation.
 ```shell
 python main.py --is_sim --grasp_only --experience_replay --explore_rate_decay --save_visualizations --load_snapshot --snapshot_file 'logs/random-pretrain/data/foreground_model.pth' 
 ```
