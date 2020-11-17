@@ -130,8 +130,11 @@ To design your own challenging test case:
 
 Change `is_real` in `constants.py` to `True`
 
-### Setup camera Instruction will be available soon
+### Camera Setup and Calibration
 1. Download and install [librealsense SDK 2.0](https://github.com/IntelRealSense/librealsense)
+1. Download the [chilitags](https://github.com/chili-epfl/chilitags) library, replace `chilitags/samples/detection/detect-from-file.cpp` with TODO, and compile. Replace `real/detect-from-live` with the compiled `detect-from-file` ececutable.
+1. Generate 4 [chilitag markers](https://github.com/chili-epfl/chilitags) and paste them outside of the workspace but inside the camera's view. Put tag info and their center 2D positions in the robot's frame into `tag_loc_robot` variables. 
+
 
 ### Quick Start
 The workflow is the same as in the simulation.
