@@ -28,6 +28,8 @@ This implementation requires the following dependencies (tested on Ubuntu 18.04.
       conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.2 -c pytorch
       ```
       Conda failed to deal with conflicts, so we used pip.
+      Tested the code on Windows (GTX 2070) with pre-trained models, it works as long as you changed the path to models in Windows syntax.
+      Please replace `pip install pycocotools` to `pip install pycocotools-windows`
 * CoppeliaSim, the simulation environment
 * GPU, 8GB memory is tested.
 
