@@ -22,10 +22,12 @@ This implementation requires the following dependencies (tested on Ubuntu 18.04.
 * Python 3
     * NumPy, SciPy, OpenCV-Python, Matplotlib, PyTorch==1.6.0, torchvision==0.7.0, Shapely, Tensorboard, Pillow, imutils, scikit-image, pycocotools (use pip or conda to install)
       ```shell
-      conda install matplotlib numpy scipy pillow scikit-image
-      conda install -c conda-forge opencv shapely tensorboard imutils pycocotools
+      conda create --name dipn python=3.8.5
+      conda activate dipn
+      pip install matplotlib numpy scipy pillow scikit-image opencv-python shapely tensorboard imutils pycocotools
       conda install pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.2 -c pytorch
       ```
+      Conda failed to deal with conflicts, so we used pip.
 * CoppeliaSim, the simulation environment
 * GPU, 8GB memory is tested.
 
