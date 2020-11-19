@@ -254,7 +254,7 @@ class Robot(object):
         self.obj_positions = []
 
         num_list = [1]
-        for i in range(2, 11):
+        for i in range(2, self.num_obj):
             num_list.extend([i] * i)
         self.num_obj = random.choice(num_list)
 

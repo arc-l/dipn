@@ -112,7 +112,7 @@ python collect_data.py --is_sim
 Collect dataset for Mask R-CNN and pre-training, `--is_mask` collects data for Mask R-CNN.
 You need to drag the `Box` object to the center in CoppeliaSim.
 ```shell
-python create_mask_rcnn_image.py --is_sim --num_obj N --is_mask
+python create_mask_rcnn_image.py --is_sim --is_mask
 ```
 
 ## Creating Your Own Test Cases in Simulation
