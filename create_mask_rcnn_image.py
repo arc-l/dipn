@@ -60,7 +60,6 @@ def main(args):
     np.random.seed(random_seed)
 
     hard_cases = list(sorted(os.listdir('hard-cases')))
-    print('total files', len(hard_cases))
 
     # Initialize pick-and-place system (camera and robot)
     robot = Robot(is_sim, obj_mesh_dir, num_obj, workspace_limits,
@@ -195,7 +194,7 @@ if __name__ == '__main__':
     # --------------- Setup options ---------------
     parser.add_argument('--is_sim', dest='is_sim', action='store_true', default=False, help='run in simulation?')
     parser.add_argument('--is_mask', dest='is_mask', action='store_true', default=False, help='collect for mask rcnn?')
-    parser.add_argument('--obj_mesh_dir', dest='obj_mesh_dir', action='store', default='objects/final-mask',
+    parser.add_argument('--obj_mesh_dir', dest='obj_mesh_dir', action='store', default='objects/random-mask',
                         help='directory containing 3D mesh files (.obj) of objects to be added to simulation')
     parser.add_argument('--num_obj', dest='num_obj', type=int, action='store',
                         default=10, help='number of objects to add to simulation')

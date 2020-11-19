@@ -114,6 +114,10 @@ You need to drag the `Box` object to the center in CoppeliaSim.
 ```shell
 python create_mask_rcnn_image.py --is_sim --is_mask
 ```
+Create dataset like `random-maskrcnn-hard`, you should run `python utils/generate_hard_case.py` first, then, 
+```shell
+python create_mask_rcnn_image.py --is_sim --is_mask --test_preset_cases
+```
 
 ## Creating Your Own Test Cases in Simulation
 
