@@ -180,7 +180,7 @@ def main(args):
         if test_preset_cases:
             robot.add_objects()
         else:
-            robot.add_objects_mask()
+            robot.add_objects_mask(num_obj)
 
         if iteration > 2000:
             break

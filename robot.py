@@ -206,7 +206,7 @@ class Robot(object):
         self.bg_color_img, self.bg_depth_img = self.get_camera_data()
         self.bg_depth_img = self.bg_depth_img * self.cam_depth_scale
 
-    def add_objects_mask(self):
+    def add_objects_mask(self, num_obj):
 
         # Add each object to robot workspace at x,y location and orientation (random or pre-loaded)
         self.object_handles = []
@@ -254,7 +254,7 @@ class Robot(object):
         self.obj_positions = []
 
         num_list = [1]
-        for i in range(2, self.num_obj):
+        for i in range(2, num_obj):
             num_list.extend([i] * i)
         self.num_obj = random.choice(num_list)
 
