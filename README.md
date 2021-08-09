@@ -14,6 +14,17 @@ We propose a Deep Interaction Prediction Network (DIPN) for learning to predict 
 
 **Paper:** https://arxiv.org/abs/2011.04692
 
+**Citation:**
+If you use this code in your research, please cite the paper:
+
+```
+@inproceedings{huang2020dipn,
+title= {Dipn: Deep interaction prediction network with application to clutter removal}
+author={Huang, Baichuan and Han, Shuai D and Boularias, Abdeslam and Yu, Jingjin},
+booktitle={2021 IEEE International Conference on Robotics and Automation (ICRA)},
+year={2021}}
+```
+
 ### Demo videos of a real robot in action can be found [here](https://drive.google.com/drive/folders/1QoTaMjdrcaeiECFNbW58DF_iFdrL-icJ?usp=sharing) (no editing).
 
 
